@@ -1,8 +1,23 @@
 .contanier {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 100%;
 }
+
+@media screen and (min-width: 320px) {
+  .contanier {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// .contanier {
+//   display: flex;
+//   align-items: center;
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
