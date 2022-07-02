@@ -1,0 +1,43 @@
+.navigation {
+  display: flex;
+
+  &__item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--text-main-color);
+
+    &--right {
+      margin-right: 46px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    transition: var(--transition);
+    transition-property: color;
+
+    &--active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: var(--brand-main-color);
+    }
+
+    &--active::after {
+      content: '';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      border-top: 4px solid var(--brand-main-color);
+      border-radius: 2px;
+      width: 100%;
+      top: 46px;
+      left: 0;
+      display: block;
+      position: absolute;
+    }
+  }
+}

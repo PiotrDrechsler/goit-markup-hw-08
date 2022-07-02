@@ -1,0 +1,33 @@
+.works-section {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &--right {
+      margin-right: 30px;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.17em;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    top: 76%;
+    color: var(--text-second-color);
+    letter-spacing: 0.03em;
+  }
+}

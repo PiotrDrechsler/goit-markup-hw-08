@@ -1,0 +1,84 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &--space-around {
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+  }
+
+  &__contanier {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__head {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    color: var(--text-second-color);
+
+    &--top {
+      margin-top: 12px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    &--top {
+      margin-top: 20px;
+    }
+  }
+
+  &__item {
+    &--right {
+      margin-right: 10px;
+    }
+  }
+
+  &__link--dark-theme {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--text-second-color);
+    background-color: #ffffff1a;
+    transition: var(--transition);
+    transition-property: background-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: var(--brand-main-color);
+    }
+  }
+
+  &__link--light-theme {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--vector-team-color);
+    background-color: #ffffff1a;
+    transition: var(--transition);
+    transition-property: background-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: var(--brand-main-color);
+      fill: var(--brand-second-color);
+    }
+  }
+}

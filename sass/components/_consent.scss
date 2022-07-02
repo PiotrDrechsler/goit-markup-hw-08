@@ -1,0 +1,38 @@
+.consent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.71em;
+    cursor: pointer;
+
+    &::before {
+      font-size: 14px;
+      display: inline-block;
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--text-main-color);
+      border-radius: 3px;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    background-color: var(--brand-main-color);
+    border: none;
+    background-image: url(../images/icon-check.svg);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center, center;
+  }
+}

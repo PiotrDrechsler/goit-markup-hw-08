@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--brand-third-color);
+
+  &__contanier {
+    display: flex;
+    align-items: flex-start;
+
+    &--space-around {
+      padding: 60px 0 60px 0;
+    }
+  }
+}
