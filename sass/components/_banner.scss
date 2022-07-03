@@ -1,63 +1,43 @@
-@media screen and (min-width: 320px) {
-  .banner {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/background/banner-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: 480px 400px;
+.banner {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/background/backgroundteam.png');
+  min-height: 600px;
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    &__tittle {
-      font-size: 26px;
-      font-weight: 900;
-      font-style: normal;
-      line-height: 1.615em;
-      letter-spacing: 0.06em;
-      text-align: center;
-      color: var(--text-second-color);
+  &__contanier {
+    display: flex;
+    flex-direction: column;
+  }
 
-      &--bottom {
-        margin-bottom: 30px;
-      }
-    }
+  &__tittle {
+    font-size: 44px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--text-second-color);
+    width: 696px;
 
-    &__button {
-      width: 200px;
-      height: 50px;
-      justify-content: space-evenly;
-      letter-spacing: 0.06em;
+    &--bottom {
+      margin-bottom: 30px;
     }
   }
+
+  &__button {
+    width: 200px;
+    height: 50px;
+    justify-content: space-evenly;
+    letter-spacing: 0.06em;
+  }
 }
-
-//   &__contanier {
-//     display: flex;
-//     flex-direction: column;
-//   }
-
-//   &__tittle {
-//     font-size: 44px;
-//     font-weight: 900;
-//     font-style: normal;
-//     line-height: 1.36em;
-//     letter-spacing: 0.06em;
-//     text-align: center;
-//     color: var(--text-second-color);
-//     width: 696px;
-
-//     &--bottom {
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   &__button {
-//     width: 200px;
-//     height: 50px;
-//     justify-content: space-evenly;
-//     letter-spacing: 0.06em;
-//    }
-// }
-//

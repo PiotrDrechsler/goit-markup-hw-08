@@ -8,7 +8,6 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -21,10 +20,6 @@
 
     &--right {
       margin-right: 30px;
-    }
-
-    &--top {
-      margin-top: 30px;
     }
   }
 
