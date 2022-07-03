@@ -82,6 +82,7 @@ textarea:focus {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -129,8 +130,8 @@ textarea:focus {
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17em;
+  font-size: 24px;
+  line-height: 1.174em;
   letter-spacing: 0.03em;
 }
 .logo--light-theme {
@@ -161,6 +162,7 @@ textarea:focus {
 }
 
 .navigation {
+  visibility: hidden;
   display: flex;
 }
 .navigation__item {
@@ -196,7 +198,12 @@ textarea:focus {
   position: absolute;
 }
 
+.hamburger-menu {
+  fill: black;
+}
+
 .contact {
+  visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -238,6 +245,7 @@ textarea:focus {
 
 .banner {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/banner-mobile.jpg");
+  background-repeat: no-repeat;
 }
 .banner__container {
   display: flex;
@@ -384,10 +392,6 @@ textarea:focus {
   margin-top: 10px;
 }
 
-.clients-section__container {
-  display: flex;
-  flex-direction: column;
-}
 .clients-section__list {
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +407,7 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -412,6 +416,9 @@ textarea:focus {
 }
 .clients-section__item--right {
   margin-right: 30px;
+}
+.clients-section__item--bottom {
+  margin-bottom: 30px;
 }
 .clients-section__item:active, .clients-section__item:hover, .clients-section__item:focus {
   border-color: var(--brand-main-color);
@@ -529,13 +536,10 @@ textarea:focus {
 .newsletter {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .newsletter--top {
-  margin-top: 12px;
-}
-.newsletter--left {
-  margin-left: 78px;
+  margin-top: 60px;
 }
 .newsletter__header {
   color: var(--text-second-color);
@@ -548,13 +552,15 @@ textarea:focus {
 }
 .newsletter__form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .newsletter__form--top {
   margin-top: 20px;
 }
 .newsletter__email {
   color: var(--text-third-color);
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 15px 15px 16px;
   margin-right: 12px;
@@ -575,7 +581,7 @@ textarea:focus {
   color: var(--text-second-color);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.87em;
+  line-height: 1.875em;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -584,6 +590,9 @@ textarea:focus {
   font-weight: 700;
   line-height: 1.87em;
   letter-spacing: 0.06em;
+}
+.newsletter__button--top {
+  margin-top: 20px;
 }
 .newsletter__icon--left {
   margin-left: 24px;
@@ -748,21 +757,23 @@ textarea:focus {
 }
 
 .adress {
-  width: 246px;
   font-size: 14px;
   font-style: normal;
   color: var(--text-second-color);
-  line-height: 1.71em;
+  line-height: 1.714em;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .adress--top {
   margin-top: 20px;
 }
-.adress--right {
-  margin-right: 70px;
+.adress__list--top {
+  margin-top: 8px;
 }
 .adress__item--top {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .adress__link {
   font-size: 14px;
@@ -792,16 +803,17 @@ textarea:focus {
 .social__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .social__head {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.17em;
+  line-height: 1.172em;
   letter-spacing: 0.03em;
   color: var(--text-second-color);
 }
 .social__head--top {
-  margin-top: 12px;
+  margin-top: 60px;
 }
 .social__list {
   display: flex;
@@ -852,7 +864,11 @@ textarea:focus {
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
-  min-height: 80px;
+  min-height: 60px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .footer {
@@ -860,7 +876,8 @@ textarea:focus {
 }
 .footer__container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__container--space-around {
   padding: 60px 0 60px 0;

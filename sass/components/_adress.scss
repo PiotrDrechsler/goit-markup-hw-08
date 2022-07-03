@@ -1,22 +1,26 @@
 .adress {
-  width: 246px;
   font-size: 14px;
   font-style: normal;
   color: var(--text-second-color);
-  line-height: 1.71em;
+  line-height: 1.714em;
   letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--top {
     margin-top: 20px;
   }
 
-  &--right {
-    margin-right: 70px;
+  &__list {
+    &--top {
+      margin-top: 8px;
+    }
   }
 
   &__item {
     &--top {
-      margin-top: 9px;
+      margin-top: 8px;
     }
   }
 
@@ -37,3 +41,43 @@
     }
   }
 }
+
+// .adress {
+//   width: 246px;
+//   font-size: 14px;
+//   font-style: normal;
+//   color: var(--text-second-color);
+//   line-height: 1.71em;
+//   letter-spacing: 0.03em;
+
+//   &--top {
+//     margin-top: 20px;
+//   }
+
+//   &--right {
+//     margin-right: 70px;
+//   }
+
+//   &__item {
+//     &--top {
+//       margin-top: 9px;
+//     }
+//   }
+
+//   &__link {
+//     font-size: 14px;
+//     font-style: normal;
+//     color: rgba(255, 255, 255, 0.6);
+//     font-weight: 400;
+//     line-height: 1.71em;
+//     letter-spacing: 0.03em;
+//     transition: var(--transition);
+//     transition-property: color;
+
+//     &:active,
+//     &:focus,
+//     &:hover {
+//       color: var(--brand-main-color);
+//     }
+//   }
+// }

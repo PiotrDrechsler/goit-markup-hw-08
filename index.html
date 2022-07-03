@@ -17,15 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <!---- ======= B O D Y ======= -->
 
   <body class="body">
     <!---- ======= H E A D E R ======= -->
-    <!-- <header class="header">
-      <div class="container">
-          <a href="./index.html" class="logo logo--right logo--light-theme">
+  <header class="header">
+      <div class="header__container container">
+          <a href="./index.html" class="logo logo--light-theme">
             <span class="logo__accent-text">Web</span><span>Studio</span>
           </a>
           <nav>
@@ -55,8 +57,11 @@
               </svg>+48 111 111 111</a>
             </li>
           </ul>
+          <svg class="hamburger-menu" width="24" height="16">
+            <use href="./images/icons.svg#icon-hamburger"></use> 
+          </svg>
       </div>
-    </header> -->
+    </header>
 
     <!---- ======= M A I N ======= -->
 
@@ -356,35 +361,35 @@
       <div class="clients-section__container container">
         <h2 class="section__title section__title--bottom">Nasi klienci</h2> 
         <ul class="clients-section__list list">
-          <li class="clients-section__item">
+          <li class="clients-section__item clients-section__item--bottom">
             <a href="" class="clients-section__link">
               <svg class="clients-section__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-yaco"></use>
               </svg>
             </a>
           </li>
-          <li class="clients-section__item">
+          <li class="clients-section__item clients-section__item--bottom">
             <a href="" class="clients-section__link">
             <svg class="clients-section__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-companytaglinehere"></use>
             </svg>
             </a>
           </li>
-          <li class="clients-section__item">
+          <li class="clients-section__item clients-section__item--bottom">
             <a href="" class="clients-section__link">
             <svg class="clients-section__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-company"></use>
             </svg>
             </a>
           </li>
-          <li class="clients-section__item">
+          <li class="clients-section__item clients-section__item--bottom">
             <a href="" class="clients-section__link">
               <svg class="clients-section__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-fosterpeters"></use>
               </svg>
             </a>
           </li>
-          <li class="clients-section__item">
+          <li class="clients-section__item ">
             <a href="" class="clients-section__link">
             <svg class="clients-section__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-brand"></use>
@@ -404,21 +409,21 @@
     </main>
 
     <!---- ======= F O O T E R ======= -->
-    <!-- 
+    
     <footer class="footer">
       <div class="footer__container footer__container--space-around container">
-        <div class="adress adress--right">
+        <div class="adress">
          <a href="./index.html" class="logo logo--dark-theme link">
             <span class="logo__accent-text">Web</span><span>Studio</span>
          </a>
         <address class="adress adress--top">m. Warszawa, Aleje Jerozolimskie 21
         </address>
-        <address>
-          <ul class="list">
+        <address class="adress__list--top">
+          <ul class= "list">
             <li class="adress adress__item--top">
               <a href="mailto:info@devstudio.com" class="adress__link link">info@devstudio.com</a>
             </li>
-            <li class="adress__item adress__item--top">
+            <li class="adress adress__item--top">
               <a href="tel:+48111111111" class="adress__link link">+48 111 111 111</a>
             </li>
           </ul>
@@ -457,13 +462,13 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter newsletter--top newsletter--left">
+        <div class="newsletter newsletter--top">
           <h2 class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</h2>
             <form class="newsletter__form newsletter__form--top">
               <label for="newsletter__label">
               <input class="newsletter__email" type="email" name="email" placeholder="E-mail" id="newsletter" required />
               </label>
-              <button class="newsletter__button" type="submit"><span class="newsletter__button__text">Zapisz się</span>
+              <button class="newsletter__button newsletter__button--top" type="submit"><span class="newsletter__button__text">Zapisz się</span>
                 <svg class="newsletter__icon newsletter__icon--left" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
@@ -472,7 +477,7 @@
           </div> 
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!---- ======= M O D A L ======= -->
 

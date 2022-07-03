@@ -1,7 +1,5 @@
 .clients-section {
   &__container {
-    display: flex;
-    flex-direction: column;
   }
 
   &__list {
@@ -21,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -30,6 +28,10 @@
 
     &--right {
       margin-right: 30px;
+    }
+
+    &--bottom {
+      margin-bottom: 30px;
     }
 
     &:active,
