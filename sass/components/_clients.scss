@@ -1,11 +1,12 @@
 .clients-section {
-  &__contanier {
+  &__container {
     display: flex;
     flex-direction: column;
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -46,3 +47,52 @@
     }
   }
 }
+
+// .clients-section {
+//   &__cont {
+//     display: flex;
+//     flex-direction: column;
+//   }
+
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   &__icon {
+//     display: flex;
+//     fill: var(--vector-team-color);
+//     transition: var(--transition);
+//     transition-property: fill;
+//   }
+
+//   &__item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     transition: var(--transition);
+//     transition-property: border-color;
+
+//     &--right {
+//       margin-right: 30px;
+//     }
+
+//     &:active,
+//     &:hover,
+//     &:focus {
+//       border-color: var(--brand-main-color);
+//       cursor: pointer;
+//     }
+
+//     &:active svg,
+//     &:hover svg,
+//     &:focus svg {
+//       fill: var(--brand-main-color);
+//       cursor: pointer;
+//     }
+//   }
+// }

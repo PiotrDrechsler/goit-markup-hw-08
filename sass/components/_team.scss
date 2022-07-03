@@ -1,13 +1,14 @@
 .team-section {
   background-color: var(--background-first-color);
 
-  &__contanier {
+  &__container {
     display: flex;
     flex-direction: column;
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -20,6 +21,10 @@
 
     &--right {
       margin-right: 30px;
+    }
+
+    &--bottom {
+      margin-bottom: 30px;
     }
   }
 

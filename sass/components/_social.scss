@@ -4,13 +4,13 @@
   justify-content: space-around;
 
   &--space-around {
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-bottom: 24px;
+    margin-left: 122px;
+    margin-right: 122px;
     margin-top: 16px;
   }
 
-  &__contanier {
+  &__container {
     display: flex;
     flex-direction: column;
   }
@@ -38,6 +38,10 @@
   &__item {
     &--right {
       margin-right: 10px;
+    }
+
+    &--bottom {
+      margin-bottom: 30px;
     }
   }
 

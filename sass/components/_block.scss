@@ -1,8 +1,5 @@
-.block-images {
+.block {
   &__list {
-    display: flex;
-    justify-content: space-between;
-
     &--bottom {
       margin-bottom: 30px;
     }
@@ -11,33 +8,34 @@
   &__item {
   }
 
-  &__contanier {
-    width: 270px;
-    background-color: var(--background-first-color);
+  &__icon-container {
     display: flex;
     justify-content: center;
+    background-color: var(--background-first-color);
 
     &--right {
       margin-right: 30px;
     }
+
+    &--bottom {
+      margin-bottom: 30px;
+    }
   }
 
-  &__image {
+  &__icon {
     margin: 25px 0 25px 0;
-  }
-}
-
-.block-text {
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   &__item {
     &--right {
       margin-right: 30px;
     }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__head {
@@ -53,10 +51,77 @@
   }
 
   &__post {
+    max-width: 450px;
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
-    max-width: 270px;
     color: var(--text-third-color);
+
+    &--bottom {
+      margin-bottom: 30px;
+    }
   }
 }
+
+// .block-images {
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+
+//     &--bottom {
+//       margin-bottom: 30px;
+//     }
+//   }
+
+//   &__item {
+//   }
+
+//   &__container {
+//     width: 270px;
+//     background-color: var(--background-first-color);
+//     display: flex;
+//     justify-content: center;
+
+//     &--right {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &__image {
+//     margin: 25px 0 25px 0;
+//   }
+// }
+
+// .block-text {
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   &__item {
+//     &--right {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &__head {
+//     font-size: 14px;
+//     font-weight: 700;
+//     line-height: 1.17em;
+//     letter-spacing: 0.03em;
+//     color: var(--text-main-color);
+
+//     &--bottom {
+//       margin-bottom: 10px;
+//     }
+//   }
+
+//   &__post {
+//     font-size: 14px;
+//     line-height: 1.71em;
+//     letter-spacing: 0.03em;
+//     max-width: 270px;
+//     color: var(--text-third-color);
+//   }
+//}
