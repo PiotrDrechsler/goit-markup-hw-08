@@ -151,7 +151,6 @@ textarea:focus {
   background-color: var(--brand-main-color);
   color: var(--text-second-color);
   font-size: 16px;
-  width: 200px;
   font-weight: 500;
   border: none;
   text-align: center;
@@ -162,8 +161,8 @@ textarea:focus {
 }
 
 .navigation {
-  visibility: hidden;
   display: flex;
+  flex-direction: column;
 }
 .navigation__item {
   font-size: 14px;
@@ -174,6 +173,10 @@ textarea:focus {
 }
 .navigation__item--right {
   margin-right: 46px;
+}
+.navigation__item--hidden {
+  display: none;
+  visibility: hidden;
 }
 .navigation__link {
   position: relative;
@@ -197,14 +200,30 @@ textarea:focus {
   display: block;
   position: absolute;
 }
-
-.hamburger-menu {
-  fill: black;
+.navigation__hamburger-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 40px;
+  height: 40px;
+}
+.navigation__hamburger-menu {
+  fill: rgb(33, 33, 33);
+  cursor: pointer;
+  transition: var(--transition);
+  transition-property: fill;
+}
+.navigation__hamburger-menu:active, .navigation__hamburger-menu:focus, .navigation__hamburger-menu:hover {
+  fill: var(--brand-main-color);
 }
 
 .contact {
   visibility: hidden;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -614,7 +633,7 @@ textarea:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: var(--brand-second-color);
 }
@@ -637,10 +656,14 @@ textarea:focus {
 }
 .modal__head {
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
-  margin: 40px 0 2px 0;
+  font-weight: 700;
+  width: 370px;
   text-align: center;
+}
+.modal__head--space-around {
+  margin: 40px 40px 12px 40px;
 }
 
 .form {
@@ -662,12 +685,14 @@ textarea:focus {
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--text-color3);
-  margin-top: 10px;
   transition: var(--transition);
   transition-property: fill;
 }
 .form__label:focus-within {
   fill: var(--brand-main-color);
+}
+.form__label--margin-top {
+  margin-top: 10px;
 }
 .form__input {
   display: block;
@@ -711,7 +736,8 @@ textarea:focus {
   width: 200px;
   height: 50px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 31px;
+  margin-bottom: 40px;
   border-radius: 4px;
   transition: var(--transition);
   transition-property: box-shadow;
@@ -721,9 +747,9 @@ textarea:focus {
 }
 
 .consent {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71em;
+  line-height: 1.171em;
   letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
@@ -732,11 +758,13 @@ textarea:focus {
   margin-top: 20px;
 }
 .consent__label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  line-height: 1.71em;
+  line-height: 1.171em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .consent__label::before {
   font-size: 14px;
@@ -746,6 +774,8 @@ textarea:focus {
   height: 16px;
   border: 2px solid var(--text-main-color);
   border-radius: 3px;
+  right: 10px;
+  position: relative;
 }
 .consent__input:checked + .consent__label::before {
   background-color: var(--brand-main-color);
@@ -754,6 +784,9 @@ textarea:focus {
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center, center;
+}
+.consent__link {
+  padding-left: 3px;
 }
 
 .adress {
@@ -861,6 +894,39 @@ textarea:focus {
   fill: var(--brand-second-color);
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--brand-second-color);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: var(--transition);
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container__close-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  right: 16px;
+}
+.menu-container__close-btn:active, .menu-container__close-btn:focus, .menu-container__close-btn:hover {
+  fill: var(--brand-main-color);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
@@ -869,6 +935,7 @@ textarea:focus {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer {

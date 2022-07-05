@@ -1,14 +1,15 @@
 .form {
-  &__icon {
-    position: absolute;
-    left: 12px;
-  }
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 40px;
   margin-right: 40px;
   position: relative;
+
+  &__icon {
+    position: absolute;
+    left: 12px;
+  }
 
   &__label {
     display: block;
@@ -17,12 +18,15 @@
     font-weight: 400;
     letter-spacing: 0.01em;
     color: var(--text-color3);
-    margin-top: 10px;
     transition: var(--transition);
     transition-property: fill;
 
     &:focus-within {
       fill: var(--brand-main-color);
+    }
+
+    &--margin-top {
+      margin-top: 10px;
     }
   }
 
@@ -73,7 +77,8 @@
     width: 200px;
     height: 50px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 31px;
+    margin-bottom: 40px;
     border-radius: 4px;
     transition: var(--transition);
     transition-property: box-shadow;

@@ -1,0 +1,37 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--brand-second-color);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: var(--transition);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__close-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    right: 16px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      fill: var(--brand-main-color);
+    }
+  }
+}

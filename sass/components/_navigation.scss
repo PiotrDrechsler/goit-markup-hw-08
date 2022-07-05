@@ -1,6 +1,6 @@
 .navigation {
-  visibility: hidden;
   display: flex;
+  flex-direction: column;
 
   &__item {
     font-size: 14px;
@@ -11,6 +11,11 @@
 
     &--right {
       margin-right: 46px;
+    }
+
+    &--hidden {
+      display: none;
+      visibility: hidden;
     }
   }
 
@@ -41,10 +46,31 @@
       position: absolute;
     }
   }
-}
 
-.hamburger-menu {
-  fill: black;
+  &__hamburger-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__hamburger-menu {
+    fill: rgba(33, 33, 33, 1);
+    cursor: pointer;
+    transition: var(--transition);
+    transition-property: fill;
+
+    &:active,
+    &:focus,
+    &:hover {
+      fill: var(--brand-main-color);
+    }
+  }
 }
 
 // .navigation {
