@@ -24,7 +24,10 @@
 @import './components/consent';
 @import './components/adress';
 @import './components/social';
-@import './components/menu-container';
+@import './components/mobile-menu.scss';
+@import './components/mobile-contact';
+@import './components/mobile-social';
 
 @import './layout/header';
 @import './layout/footer';
+@import './layout/menu-container';

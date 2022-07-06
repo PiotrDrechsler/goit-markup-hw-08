@@ -1,0 +1,19 @@
+.mobile-menu {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.172em;
+  letter-spacing: 0.02em;
+  color: rgba(33, 33, 33, 1);
+
+  &__item {
+    &--bottom {
+      padding-bottom: 32px;
+    }
+  }
+
+  &__link {
+    &--active-page {
+      color: var(--brand-main-color);
+    }
+  }
+}

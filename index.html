@@ -22,7 +22,6 @@
   </head>
 
   <!---- ======= B O D Y ======= -->
-
   <body class="body" >
     <!---- ======= H E A D E R ======= -->
   <header class="header">
@@ -534,12 +533,45 @@
 
      <!----  ======= M O B I L E  M E N U  ======= -->
 
-     <div class="menu-container js-menu-container is-open" id="mobile-menu">
+     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="js-close-menu menu-container__close-btn button">
        <svg class=" " width="40" height="40">
            <use href="./images/icons.svg#icon-close"></use>s
           </svg>
        </button>
+       <ul class="mobile-menu list">
+        <li class="mobile-menu__item  mobile-menu__item--bottom">
+          <a href="./index.html" class="mobile-menu__link mobile-menu__link--active-page link">Agencja</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--bottom">
+           <a href="./portfolio.html" class="mobile-menu__link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+           <a href="" class="mobile-menu__link link">Kontakt</a>
+        </li>
+       </ul>
+       <ul class="mobile-contact mobile-contact--top list">
+        <li class="mobile-contact__item mobile-contact__item--bottom">
+          <a href="tel:+48111111111" class="mobile-contact__phone link">+48 111 111 111</a>
+        </li>
+        <li class="">
+          <a href="mailto:info@devstudio.com" class="mobile-contact__mail link">info@devstudio.com</a>
+        </li>
+       </ul>
+       <ul class="mobile-social mobile-social--top list">
+        <li class="mobile-social__item">
+          <a href= "" class="mobile-social__link link">Instagram<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Twitter<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Facebook<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Linkedin</a>
+        </li>
+       </ul>
        
 
     <script src="./js/modal.js"></script>

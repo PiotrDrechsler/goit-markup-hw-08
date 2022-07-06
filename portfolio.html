@@ -2,7 +2,7 @@
 <html lang="pl">
   <!---- ======= H E A D  ======= -->
 
-  <!-- <head>
+   <head>
     <title>WebStudio</title>
     <meta charset="utf-8" />
     <meta
@@ -10,34 +10,47 @@
       content="Efektywne rozwiązania dla Waszego biznesu"
     />
     <link rel="stylesheet" href="css/mordern-normalize.css" />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-  </head> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
   <!---- ======= B O D Y ======= -->
-  <!-- <body class="body"> -->
+  <body class="body">
     <!---- ======= H E A D E R ======= -->
-<!-- 
+
     <header class="header">
-      <div class="container">
-          <a href="./index.html" class="logo logo--right logo--light-theme">
+      <div class="header__container container">
+          <a href="./index.html" class="logo logo--light-theme">
             <span class="logo__accent-text">Web</span><span>Studio</span>
           </a>
           <nav>
           <ul class="navigation list">
-            <li class="navigation__item navigation__item--right">
-              <a href="./index.html" class="navigation__link link">Agencja</a>
+            <li class="navigation__item navigation__item--right navigation__item--hidden">
+              <a href="./index.html" class="navigation__link navigation__link--active link">Agencja</a>
             </li>
-            <li class="navigation__item navigation__item--right">
-              <a href="./portfolio.html" class="navigation__link navigation__link--active link">Portfolio</a>
+            <li class="navigation__item navigation__item--right navigation__item--hidden">
+              <a href="./portfolio.html" class="navigation__link link">Portfolio</a>
+            </li>
+            <li class="navigation__item navigation__item--hidden">
+              <a href="" class="navigation__link link">Kontakt</a>
             </li>
             <li class="navigation__item">
-              <a href="" class="navigation__link link">Kontakt</a>
+              <button 
+               class="menu-toggle js-open-menu navigation__hamburger-button button"
+               aria-expanded="false"
+               aria-controls="mobile-menu"
+               >
+               <svg class="navigation__hamburger-menu" width="40" height="40">
+                 <use href="./images/icons.svg#icon-hamburger"></use> 
+               </svg>
+              </button>  
             </li>
           </ul>
           </nav> 
@@ -56,53 +69,56 @@
             </li>
           </ul>
       </div>
-    </header> -->
+    </header>
 
     <!---- ======= M A I N ======= -->
 
-    <!-- <main>
+     <main>
       <!---- ======= P O R T F O L I O  B U T T O N S ======= -->
-
-      <!-- <section class="buttons buttons-section--bottom section">
+    
+      <section class="buttons buttons--space">
+        <div class="container">
         <ul class="buttons__list list">
           <li>
-            <button class="buttons__button button" type="button">
+            <button class="buttons__button buttons__button--bottom button" type="button">
               Wszystkie
             </button>
           </li>
           <li>
-            <button class="buttons__button button" type="button">
+            <button class="buttons__button buttons__button--left button" type="button">
               Strony
             </button>
           </li>
           <li>
-            <button class="buttons__button button" type="button">
+            <button class="buttons__button buttons__button--left button" type="button">
               Aplikacje
             </button>
           </li>
           <li>
-            <button class="buttons__button button" type="button">
+            <button class="buttons__button buttons__button--left button" type="button">
               Dizajn
             </button>
           </li>
           <li>
-            <button class="buttons__button button" type="button">
+            <button class="buttons__button  button" type="button">
               Marketing
             </button>
           </li>
         </ul>
-      </section> -->
+        </div>
+      </section>
+      
 
       <!---- ======= P O R T F O L I O ======= -->
 
-      <!-- <section class="portfolio-section portfolio-section--top section">
+      <section class="portfolio-section portfolio-section--top section">  
         <div class="container">
           <ul class="portfolio-section__list list">
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/technocrack.jpg"
+                src="./images/portfolio/technocrack-mobile.jpg"
                 alt="Technocrack"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -115,9 +131,9 @@
             </li> 
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/grafikaneworleanvsgoldenstar.jpg"
+                src="./images/portfolio/grafikaneworleanvsgoldenstar-mobile.jpg"
                 alt="Grafika New Orlean vs Golden Star"
-                width="380"
+                width="450"
                 height="294"
                 
               />
@@ -131,9 +147,9 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/restauracjaseafood.jpg"
+                src="./images/portfolio/restauracjaseafood-mobile.jpg"
                 alt="Restauracja Seafood"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -146,9 +162,9 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/projektprime.jpg"
+                src="./images/portfolio/projektprime-mobile.jpg"
                 alt="Projekt Prime"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -161,13 +177,13 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/projektboxes.jpg"
+                src="./images/portfolio/projektboxes-mobile.jpg"
                 alt="Projekt Boxes"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
-                <p class="portfolio-section__overlay__">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                <p class="portfolio-section__overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
               </div>
               <div class="portfolio-section__container portfolio-section__container--top">
                 <h3 class="portfolio-section__title">Projekt Boxes</h3>
@@ -176,9 +192,9 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/inspirationhasnoborders.jpg"
+                src="./images/portfolio/inspirationhasnoborders-mobile.jpg"
                 alt="Inspiration has no Borders"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -191,9 +207,9 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/magazynlimitededition.jpg"
+                src="./images/portfolio/magazynlimitededition-mobile.jpg"
                 alt="Magazyn Limited Edition"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -206,9 +222,9 @@
             </li>
             <li class="portfolio-section__item portfolio-section__item--bottom">
               <img
-                src="images/portfolio/projektlab.jpg"
+                src="./images/portfolio/projektlab-mobile.jpg"
                 alt="Projekt LAB"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -219,11 +235,11 @@
                 <p class="portfolio-section__text">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-section__item portfolio-section__item--bottom">
+            <li class="portfolio-section__item">
               <img
-                src="images/portfolio/growingbusiness.jpg"
+                src="./images/portfolio/growingbusiness-mobile.jpg"
                 alt="Growing Business"
-                width="370"
+                width="450"
                 height="294"
               />
               <div class="portfolio-section__overlay">
@@ -237,24 +253,25 @@
           </ul>
         </div>
       </section>
-    </main> --> -->
+      
+    </main> 
 
     <!---- ======= F O O T E R ======= -->
 
-      <!-- <footer class="footer">
+ <footer class="footer">
       <div class="footer__container footer__container--space-around container">
-        <div class="adress adress--right">
+        <div class="adress">
          <a href="./index.html" class="logo logo--dark-theme link">
             <span class="logo__accent-text">Web</span><span>Studio</span>
          </a>
         <address class="adress adress--top">m. Warszawa, Aleje Jerozolimskie 21
         </address>
-        <address>
-          <ul class="list">
+        <address class="adress__list--top">
+          <ul class= "list">
             <li class="adress adress__item--top">
               <a href="mailto:info@devstudio.com" class="adress__link link">info@devstudio.com</a>
             </li>
-            <li class="adress__item adress__item--top">
+            <li class="adress adress__item--top">
               <a href="tel:+48111111111" class="adress__link link">+48 111 111 111</a>
             </li>
           </ul>
@@ -293,13 +310,13 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter newsletter--top newsletter--left">
+        <div class="newsletter newsletter--top">
           <h2 class="newsletter__header">ZAPISZ SIĘ DO NEWSLETTERA</h2>
             <form class="newsletter__form newsletter__form--top">
               <label for="newsletter__label">
               <input class="newsletter__email" type="email" name="email" placeholder="E-mail" id="newsletter" required />
               </label>
-              <button class="newsletter__button" type="submit"><span class="newsletter__button__text">Zapisz się</span>
+              <button class="newsletter__button newsletter__button--top" type="submit"><span class="newsletter__button__text">Zapisz się</span>
                 <svg class="newsletter__icon newsletter__icon--left" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
@@ -308,7 +325,54 @@
           </div> 
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <!----  ======= M O B I L E  M E N U  ======= -->
+
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu menu-container__close-btn button">
+       <svg class=" " width="40" height="40">
+           <use href="./images/icons.svg#icon-close"></use>s
+          </svg>
+       </button>
+       <ul class="mobile-menu list">
+        <li class="mobile-menu__item  mobile-menu__item--bottom">
+          <a href="./index.html" class="mobile-menu__link link">Agencja</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--bottom">
+           <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active-page link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+           <a href="" class="mobile-menu__link link">Kontakt</a>
+        </li>
+       </ul>
+       <ul class="mobile-contact mobile-contact--top list">
+        <li class="mobile-contact__item mobile-contact__item--bottom">
+          <a href="tel:+48111111111" class="mobile-contact__phone link">+48 111 111 111</a>
+        </li>
+        <li class="">
+          <a href="mailto:info@devstudio.com" class="mobile-contact__mail link">info@devstudio.com</a>
+        </li>
+       </ul>
+       <ul class="mobile-social mobile-social--top list">
+        <li class="mobile-social__item">
+          <a href= "" class="mobile-social__link link">Instagram<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Twitter<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Facebook<span class="mobile-social--space">|<span></a>
+        </li>
+        <li class="mobile-social__item">
+          <a href=" " class="mobile-social__link link">Linkedin</a>
+        </li>
+       </ul>
+       
+
+    <script src="./js/modal.js"></script>
+     <script defer src="js/mobile-menu.js"></script>
+  
     
   </body>
 </html>

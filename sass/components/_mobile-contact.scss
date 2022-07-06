@@ -1,0 +1,27 @@
+.mobile-contact {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.176em;
+  letter-spacing: 0.02em;
+  color: rgba(33, 33, 33, 1);
+
+  &__item {
+    &--bottom {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__phone {
+    color: var(--brand-main-color);
+  }
+
+  &__mail {
+    font-size: 24px;
+    line-height: 1.166em;
+    color: rgba(117, 117, 117, 1);
+  }
+
+  &--top {
+    margin-top: 302px;
+  }
+}
