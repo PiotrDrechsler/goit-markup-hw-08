@@ -51,7 +51,6 @@
   }
 
   &__post {
-    max-width: 450px;
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
@@ -59,6 +58,46 @@
 
     &--bottom {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .block {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__icon-container {
+      &--right {
+      }
+    }
+
+    &__text-container {
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item { 
+      width: 270px;
+    }
+
+    &__text-container {
+      align-items: flex-start;
     }
   }
 }

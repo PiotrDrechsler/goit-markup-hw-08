@@ -1,6 +1,6 @@
 .works-section {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  visibility: hidden;
 
   &__list {
     display: flex;
@@ -29,5 +29,13 @@
     top: 76%;
     color: var(--text-second-color);
     letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-section {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
   }
 }

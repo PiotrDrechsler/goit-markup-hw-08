@@ -4,7 +4,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-  min-height: 581px;
+  min-height: 609px;
   background-color: var(--brand-second-color);
 
   &__close-btn {
@@ -31,7 +31,7 @@
     line-height: 1.5em;
     letter-spacing: 0.03em;
     font-weight: 700;
-    width: 370px;
+    max-width: 370px;
     text-align: center;
 
     &--space-around {

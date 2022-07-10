@@ -11,6 +11,11 @@
     padding-bottom: 118px;
   }
 
+  &--works {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   &__title {
     text-align: center;
     font-size: 28px;
@@ -20,6 +25,34 @@
 
     &--bottom {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    &--bottom {
+      padding-bottom: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--works {
+      padding-top: 0px;
+    }
+
+    &--banner {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    &__title {
+      font-size: 36px;
     }
   }
 }

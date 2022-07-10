@@ -6,12 +6,17 @@
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/background/banner-mobile.jpg');
+  background-size: cover;
+  min-height: 400px;
+  max-width: 100%;
   background-repeat: no-repeat;
+  background-position: center;
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-position: center;
   }
 
   &__tittle {
@@ -36,6 +41,37 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/banner-tablet.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    min-height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/banner-desktop.png');
+
+    &__tittle {
+      font-size: 44px;
+      line-height: 1.363em;
+      width: 696px;
+    }
+  }
+}
 // .banner {
 //   background-image: linear-gradient(
 //       rgba(47, 48, 58, 0.4),

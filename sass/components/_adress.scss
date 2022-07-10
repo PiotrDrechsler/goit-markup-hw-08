@@ -42,6 +42,22 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress {
+    width: 253px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress {
+    align-items: flex-start;
+
+    &--right {
+      margin-right: 70px;
+    }
+  }
+}
+
 // .adress {
 //   width: 246px;
 //   font-size: 14px;

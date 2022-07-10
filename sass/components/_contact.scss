@@ -1,15 +1,11 @@
 .contact {
   visibility: hidden;
   display: none;
-  flex-wrap: wrap;
-  align-items: center;
+  position: absolute;
+  right: 15px;
 
   &--left {
-    margin-left: auto;
-  }
-
-  &--right {
-    margin-right: 15px;
+    margin-left: 317px;
   }
 
   &__item {
@@ -45,6 +41,37 @@
     margin-right: 10px;
     cursor: pointer;
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .contact {
+    visibility: visible;
+    display: block;
+
+    &__item {
+      &--top {
+        margin-top: 10px;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.171em;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    visibility: visible;
+    display: flex;
+    align-items: flex-end;
+    position: static;
+
+    &__link {
+      font-size: 16px;
+    }
   }
 }
 

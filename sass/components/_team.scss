@@ -28,6 +28,9 @@
     }
   }
 
+  &__image {
+  }
+
   &__post-head {
     font-size: 16px;
     font-weight: 500;
@@ -49,6 +52,35 @@
 
     &--top {
       margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-section {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      &--bottom-tablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    &__list {
+      flex-direction: row;
+    }
+
+    &__item {
+      &--bottom {
+        margin-bottom: 0;
+      }
     }
   }
 }

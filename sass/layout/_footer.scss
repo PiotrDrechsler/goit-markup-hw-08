@@ -12,6 +12,31 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      &--space-around {
+        padding: 60px 15px 60px 15px;
+      }
+    }
+  }
+}
+
 // .footer {
 //   background-color: var(--brand-third-color);
 

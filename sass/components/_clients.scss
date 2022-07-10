@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    width: calc(50vw - 30px);
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -46,6 +46,29 @@
     &:focus svg {
       fill: var(--brand-main-color);
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-section {
+    &__item {
+      width: calc(33vw - 30px);
+
+      &--bottom-tablet {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    &__list {
+      flex-wrap: nowrap;
+    }
+    &__item {
+      width: 170px;
     }
   }
 }

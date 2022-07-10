@@ -10,6 +10,16 @@
   }
 }
 
+@media (min-width: 768px) {
+  .header {
+    min-height: 80px;
+
+    &__container {
+      justify-content: normal;
+    }
+  }
+}
+
 // .header {
 //   border-bottom: 1px solid #ececec;
 //   display: flex;
