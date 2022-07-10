@@ -3,9 +3,12 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   min-height: 609px;
   background-color: var(--brand-second-color);
+  transition: var(--transition);
+  transition-property: transform;
 
   &__close-btn {
     position: absolute;
@@ -37,5 +40,11 @@
     &--space-around {
       margin: 40px 40px 12px 40px;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
   }
 }

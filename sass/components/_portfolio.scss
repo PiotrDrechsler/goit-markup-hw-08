@@ -90,3 +90,36 @@
     margin: 4px 24px 20px 24px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-section {
+
+    &__item {
+
+    }
+    &__overlay {
+      &__text {
+        margin: 49px 24px 49px 24px;
+      }
+    }
+  }
+}
+  
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+
+    &__item {
+       &--bottom-desktop {
+        margin-bottom: 0;
+       }
+    }
+
+
+    &__overlay {
+      &__text {
+        margin: 49px 45px 49px 24px;
+      }
+    }
+  }
+}
+

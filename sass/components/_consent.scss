@@ -10,6 +10,7 @@
   margin-top: 20px;
 
   &__label {
+    font-family: var(--main-font);
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.03em;
@@ -17,6 +18,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    color: var(--text-third-color);
 
     &::before {
       font-size: 14px;

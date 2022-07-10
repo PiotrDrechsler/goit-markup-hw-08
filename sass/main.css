@@ -86,6 +86,7 @@ textarea:focus {
   padding: 0 15px;
   min-width: 320px;
   max-width: 1200px;
+  min-width: 320px;
 }
 
 .section {
@@ -609,17 +610,22 @@ textarea:focus {
   }
 }
 .buttons--space {
-  margin-top: 60px;
+  margin-top: 45px;
   margin-bottom: 40px;
 }
 .buttons__list {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 .buttons__button {
   background-color: var(--background-first-color);
   color: var(--text-main-color);
-  width: auto;
+  width: 114px;
+  margin-top: 15px;
+  margin-right: 4px;
+  margin-left: 4px;
   letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
@@ -641,6 +647,23 @@ textarea:focus {
   margin-left: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buttons--space {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .buttons__button {
+    margin-top: 0;
+  }
+  .buttons__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons__list {
+    justify-content: center;
+  }
+}
 .portfolio-section--top {
   padding-top: 0px;
 }
@@ -718,11 +741,24 @@ textarea:focus {
   margin: 4px 24px 20px 24px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-section__overlay__text {
+    margin: 49px 24px 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section__item--bottom-desktop {
+    margin-bottom: 0;
+  }
+  .portfolio-section__overlay__text {
+    margin: 49px 45px 49px 24px;
+  }
+}
 .newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  width: 100%;
 }
 .newsletter--top {
   margin-top: 60px;
@@ -747,7 +783,6 @@ textarea:focus {
 .newsletter__email {
   color: var(--text-third-color);
   width: 100%;
-  height: 50px;
   height: 50px;
   padding: 15px 15px 15px 16px;
   background-color: #2f303a;
@@ -816,8 +851,8 @@ textarea:focus {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--transition), visibility var(--transition);
   transition-property: visibility, opacity;
@@ -828,9 +863,12 @@ textarea:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: calc(100vw - 30px);
+  max-width: 450px;
   min-height: 609px;
   background-color: var(--brand-second-color);
+  transition: var(--transition);
+  transition-property: transform;
 }
 .modal__close-btn {
   position: absolute;
@@ -861,6 +899,11 @@ textarea:focus {
   margin: 40px 40px 12px 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -880,7 +923,7 @@ textarea:focus {
   line-height: 1.17em;
   font-weight: 400;
   letter-spacing: 0.01em;
-  color: var(--text-color3);
+  color: var(--text-third-color);
   transition: var(--transition);
   transition-property: fill;
 }
@@ -954,6 +997,7 @@ textarea:focus {
   margin-top: 20px;
 }
 .consent__label {
+  font-family: var(--main-font);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -961,6 +1005,7 @@ textarea:focus {
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: var(--text-third-color);
 }
 .consent__label::before {
   font-size: 14px;
@@ -1025,6 +1070,7 @@ textarea:focus {
 }
 @media screen and (min-width: 1200px) {
   .adress {
+    width: 246px;
     align-items: flex-start;
   }
   .adress--right {
@@ -1207,7 +1253,7 @@ textarea:focus {
   align-items: center;
 }
 .footer__container--space-around {
-  padding: 60px 0 60px 0;
+  padding: 60px 15px 60px 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
