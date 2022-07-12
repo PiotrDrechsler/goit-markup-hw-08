@@ -26,11 +26,11 @@
 }
 
 .input-button {
-  background-image: url(/images/icon-unchecked.svg);
+  background-image: url(../images/icon-unchecked.svg);
   background-repeat: no-repeat;
 
   &:checked {
-    background-image: url(/images/icon-checked.svg);
+    background-image: url(../images/icon-checked.svg);
     background-color: var(--brand-main-color);
     background-repeat: no-repeat;
     background-position: center center;
