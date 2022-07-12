@@ -1,48 +1,44 @@
 .consent {
-  font-size: 12px;
   font-weight: 400;
+  font-size: 12px;
   line-height: 1.171em;
   letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center;
+  color: var(--text-third-color);
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   &__label {
-    font-family: var(--main-font);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    line-height: 1.171em;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
     color: var(--text-third-color);
-
-    &::before {
-      font-size: 14px;
-      display: inline-block;
-      content: '';
-      width: 16px;
-      height: 16px;
-      border: 2px solid var(--text-main-color);
-      border-radius: 3px;
-      right: 10px;
-      position: relative;
-    }
   }
 
-  &__input:checked + &__label::before {
-    background-color: var(--brand-main-color);
-    border: none;
-    background-image: url(../images/icon-check.svg);
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    background-position: center, center;
+  &__input {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
   }
 
   &__link {
     padding-left: 3px;
+  }
+}
+
+.input-button {
+  background-image: url(/images/icon-unchecked.svg);
+  background-repeat: no-repeat;
+
+  &:checked {
+    background-image: url(/images/icon-checked.svg);
+    background-color: var(--brand-main-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .consent {
+    font-size: 14px;
   }
 }

@@ -82,6 +82,12 @@
     &__text-container {
       align-items: flex-start;
     }
+
+    &__post {
+      &--bottom-tablet {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -92,12 +98,18 @@
       justify-content: space-between;
     }
 
-    &__item { 
+    &__item {
       width: 270px;
     }
 
     &__text-container {
       align-items: flex-start;
+    }
+
+    &__post {
+      &--bottom-desktop {
+        margin-bottom: 0;
+      }
     }
   }
 }

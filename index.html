@@ -95,7 +95,7 @@
             </div>
             <div class=block__text-container>
             <h3 class="block__head block__head--bottom">LOREM IPSUM</h3>
-            <p class="block__post block__post--bottom">
+            <p class="block__post block__post--bottom block__post--bottom-desktop">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               velarcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -109,7 +109,7 @@
             </div>
             <div class=block__text-container>
             <h3 class="block__head block__head--bottom">LOREM IPSUM</h3>
-            <p class="block__post block__post--bottom">
+            <p class="block__post block__post--bottom block__post--bottom-desktop">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               velarcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -123,7 +123,7 @@
             </div>
             <div class="block__text-container">
             <h3 class="block__head block__head--bottom">LOREM IPSUM</h3>
-            <p class="block__post">
+            <p class="block__post block__post--bottom block__post--bottom-tablet block__post--bottom-desktop">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               velarcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -137,7 +137,7 @@
             </div>
             <div class=block__text-container>
             <h3 class="block__head block__head--bottom">LOREM IPSUM</h3>
-            <p class="block__post">
+            <p class="block__post block__post--bottom-desktop">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               velarcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -153,7 +153,7 @@
         <div class="works-section container">
           <h2 class="section__title section__title--bottom">Czym się zajmujemy</h2>
           <ul class="works-section__list list">
-            <li class="works-section__item works-section__item--right">
+            <li class="works-section__item">
               <img
                 src="images/whatwedo/img.jpg"
                 alt="Someone is typing something on the keyboard"
@@ -162,7 +162,7 @@
               />
               <p class="works-section__overlay">APLIKACJE KOMPUTEROWE</p>
             </li>
-            <li class="works-section__item works-section__item--right">
+            <li class="works-section__item">
               <img
                 src="images/whatwedo/img-1.jpg"
                 alt="Someone is checking something on their phone"
@@ -171,7 +171,7 @@
               />
              <p class="works-section__overlay">APLIKACJE MOBILNE</p>
             </li>
-            <li class="works-section__item works-section__item--right">
+            <li class="works-section__item">
               <img
                 src="images/whatwedo/img-2.jpg"
                 alt="Someone is using a color palette on a tablet"
@@ -555,10 +555,11 @@
             <textarea class="form__textarea" name="comment" id="comment" type="text" rows="6" placeholder="Wprowadź tekst"></textarea>
           </label>  
         <div class="consent">
-            <input type="checkbox" class="consent__input visually-hidden" value="accept" name="consent" id="consent" required />
-            <label for="consent" class="consent__label consent__label--padding-right">Oświadczam iż akceptuję
+          <label for="consent" class="consent__label"></label>
+            <input class="consent__input input-button hidden" type="checkbox" value="accept" name="consent" id="consent" required />
+            &nbsp&nbspOświadczam iż akceptuję
               <a href="#regulamin" class="consent__link">Regulamin</a>&nbspi 
-              <a href="#polityka" class="consent__link">Politykę Prywatności</a>
+              <a href="#polityka" class="consent__link">Politykę Prywatności</a>.
             </label> 
         </div> 
         <button class="form__button button" type="submit">Wyślij</button>
@@ -595,17 +596,17 @@
         </li>
        </ul>
        <ul class="mobile-social mobile-social--top list">
-        <li class="mobile-social__item">
+        <li class="mobile-social__item mobile-social__item--bottom">
           <a href= "" class="mobile-social__link link">Instagram<span class="mobile-social--space">|<span></a>
         </li>
-        <li class="mobile-social__item">
-          <a href=" " class="mobile-social__link link">Twitter<span class="mobile-social--space">|<span></a>
+        <li class="mobile-social__item mobile-social__item--bottom">
+          <a href=" " class="mobile-social__link link mobile-social__item--bottom">Twitter<span class="mobile-social--space">|<span></a>
         </li>
         <li class="mobile-social__item">
-          <a href=" " class="mobile-social__link link">Facebook<span class="mobile-social--space">|<span></a>
+          <a href=" " class="mobile-social__link link mobile-social__item--bottom">Facebook<span class="mobile-social--space">|<span></a>
         </li>
         <li class="mobile-social__item">
-          <a href=" " class="mobile-social__link link">Linkedin</a>
+          <a href=" " class="mobile-social__link link mobile-social__item--bottom">Linkedin</a>
         </li>
        </ul>
        
