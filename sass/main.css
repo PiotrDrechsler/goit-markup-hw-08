@@ -680,7 +680,7 @@ textarea:focus {
 .portfolio-section__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .portfolio-section__item {
@@ -736,7 +736,8 @@ textarea:focus {
   padding-top: 20px;
 }
 .portfolio-section__title {
-  font-size: 18px;
+  text-align: left;
+  font-size: 17px;
   font-weight: 700;
   line-height: 2em;
   letter-spacing: 0.06em;
@@ -748,7 +749,7 @@ textarea:focus {
   font-weight: 400;
   line-height: 1.9em;
   letter-spacing: 0.03em;
-  margin: 4px 24px 20px 24px;
+  margin: 0 24px 20px 24px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1212,7 +1213,7 @@ textarea:focus {
   color: rgb(117, 117, 117);
 }
 .mobile-contact--top {
-  padding-top: 100%;
+  padding-top: 270px;
 }
 
 .mobile-social {
