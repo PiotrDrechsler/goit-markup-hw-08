@@ -686,6 +686,8 @@ textarea:focus {
 .portfolio-section__item {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  min-height: 100%;
   transition: var(--transition);
   transition-property: box-shadow;
 }
@@ -698,15 +700,20 @@ textarea:focus {
   transition: var(--transition);
   transition-property: box-shadow;
 }
+.portfolio-section__image {
+  min-width: 100%;
+}
 .portfolio-section__item:hover .portfolio-section__overlay {
   transform: translateY(0);
   transition: var(--transition);
   transition-property: transform;
 }
 .portfolio-section__overlay {
+  text-align: left;
   position: absolute;
   width: 100%;
   height: 100%;
+  line-height: 100%;
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
@@ -715,33 +722,34 @@ textarea:focus {
   transition-property: transform;
 }
 .portfolio-section__overlay__text {
-  position: absolute;
+  padding: 40px 24px 0px 24px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.555em;
   letter-spacing: 0.03em;
   color: var(--text-second-color);
-  margin: 77px 24px 77px 24px;
 }
 .portfolio-section__container {
+  min-width: 100%;
+  flex-grow: 1;
+  box-sizing: inherit;
   position: relative;
   background: var(--brand-second-color);
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-top: 0;
-  padding-top: 20px;
+  padding: 15px 24px 20px 24px;
 }
 .portfolio-section__container--top {
   padding-top: 20px;
 }
 .portfolio-section__title {
   text-align: left;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 2em;
   letter-spacing: 0.06em;
-  margin: 0 24px 0 24px;
 }
 .portfolio-section__text {
   color: var(--text-third-color);
@@ -749,20 +757,35 @@ textarea:focus {
   font-weight: 400;
   line-height: 1.9em;
   letter-spacing: 0.03em;
-  margin: 0 24px 20px 24px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 450px) {
   .portfolio-section__overlay__text {
-    margin: 49px 24px 49px 24px;
+    padding-top: 25px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-section__list {
+    align-items: flex-start;
+  }
+  .portfolio-section__item {
+    flex-basis: calc(50% - 30px);
+    width: auto;
+  }
+  .portfolio-section__overlay__text {
+    font-size: 115%;
   }
 }
 @media screen and (min-width: 1200px) {
+  .portfolio-section__item {
+    width: auto;
+  }
   .portfolio-section__item--bottom-desktop {
     margin-bottom: 0;
   }
   .portfolio-section__overlay__text {
-    margin: 49px 45px 49px 24px;
+    font-size: 115%;
   }
 }
 .newsletter {
@@ -1213,7 +1236,7 @@ textarea:focus {
   color: rgb(117, 117, 117);
 }
 .mobile-contact--top {
-  padding-top: 270px;
+  padding-top: 200px;
 }
 
 .mobile-social {
@@ -1288,6 +1311,9 @@ textarea:focus {
   }
 }
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   left: 0;

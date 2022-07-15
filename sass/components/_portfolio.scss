@@ -13,6 +13,8 @@
   &__item {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    min-height: 100%;
     transition: var(--transition);
     transition-property: box-shadow;
 
@@ -31,6 +33,10 @@
     }
   }
 
+  &__image {
+    min-width: 100%;
+  }
+
   &__item:hover &__overlay {
     transform: translateY(0);
     transition: var(--transition);
@@ -38,9 +44,11 @@
   }
 
   &__overlay {
+    text-align: left;
     position: absolute;
     width: 100%;
     height: 100%;
+    line-height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
@@ -49,24 +57,26 @@
     transition-property: transform;
 
     &__text {
-      position: absolute;
+      padding: 40px 24px 0px 24px;
       font-size: 18px;
       font-weight: 400;
       line-height: 1.555em;
       letter-spacing: 0.03em;
       color: var(--text-second-color);
-      margin: 77px 24px 77px 24px;
     }
   }
 
   &__container {
+    min-width: 100%;
+    flex-grow: 1;
+    box-sizing: inherit;
     position: relative;
     background: var(--brand-second-color);
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-top: 0;
-    padding-top: 20px;
+    padding: 15px 24px 20px 24px;
 
     &--top {
       padding-top: 20px;
@@ -75,11 +85,10 @@
 
   &__title {
     text-align: left;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 2em;
     letter-spacing: 0.06em;
-    margin: 0 24px 0 24px;
   }
 
   &__text {
@@ -88,17 +97,33 @@
     font-weight: 400;
     line-height: 1.9em;
     letter-spacing: 0.03em;
-    margin: 0 24px 20px 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio-section {
+    &__overlay {
+      &__text {
+        padding-top: 25px;
+        font-size: 14px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-section {
+    &__list {
+      align-items: flex-start;
+    }
+
     &__item {
+      flex-basis: calc(50% - 30px);
+      width: auto;
     }
     &__overlay {
       &__text {
-        margin: 49px 24px 49px 24px;
+        font-size: 115%;
       }
     }
   }
@@ -107,6 +132,7 @@
 @media screen and (min-width: 1200px) {
   .portfolio-section {
     &__item {
+      width: auto;
       &--bottom-desktop {
         margin-bottom: 0;
       }
@@ -114,7 +140,7 @@
 
     &__overlay {
       &__text {
-        margin: 49px 45px 49px 24px;
+        font-size: 115%;
       }
     }
   }
