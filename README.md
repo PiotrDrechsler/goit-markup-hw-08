@@ -4,5 +4,7 @@ Used tools:
   - HTML5
   - CSS3
   - SASS
+  
+Works on: desktop, tablet and mobile devices.
 
 Created by Piotr Drechsler
