@@ -1,5 +1,4 @@
-WebStudio website
-[WebStudio](https://piotrdrechsler.github.io/goit-markup-hw-08/)
+[WebStudio](https://piotrdrechsler.github.io/goit-markup-hw-08/)website
 
 Used tools:
   - HTML5
